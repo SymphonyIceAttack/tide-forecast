@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "US Tide Forecast - Real-Time NOAA Tide Predictions & Charts",
   description:
     "Access accurate tide predictions and charts for major coastal locations across the United States. Real-time tide data from NOAA including high tide, low tide times, and tide height forecasts.",
+  manifest: "/site.webmanifest",
   keywords: [
     "tide chart",
     "tide times",
@@ -30,12 +31,23 @@ export const metadata: Metadata = {
     "Miami tides",
     "New York tides",
   ],
+  themeColor: "#0ea5e9",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
   authors: [{ name: "SymphoneIceAttack" }],
   creator: "SymphoneIceAttack",
   publisher: "SymphoneIceAttack",
-  metadataBase: new URL("https://tideschart.vercel.app"),
+  metadataBase: new URL("https://www.tide-forecast.art/"),
   alternates: {
     canonical: "/",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "US Tides",
   },
   openGraph: {
     type: "website",
