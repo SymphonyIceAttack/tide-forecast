@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown, Waves } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -54,11 +55,20 @@ export function TideHeader() {
             </DropdownMenu>
           </div>
 
-          <div className="hidden sm:flex items-center gap-2">
+          <div className="flex items-center gap-2">
+            <Link href="/blog">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-primary-foreground hover:bg-primary-foreground/10 font-medium"
+              >
+                Blog
+              </Button>
+            </Link>
             <Button
               variant="ghost"
               size="sm"
-              className="text-primary-foreground hover:bg-primary-foreground/10"
+              className="hidden sm:flex text-primary-foreground hover:bg-primary-foreground/10"
             >
               English
             </Button>
