@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import type React from "react";
 import "./globals.css";
 import { QueryProvider } from "@/components/query-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 import { LocationProvider } from "@/lib/location-context";
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -32,11 +33,6 @@ export const metadata: Metadata = {
     "New York tides",
   ],
   themeColor: "#0ea5e9",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
   authors: [{ name: "SymphoneIceAttack" }],
   creator: "SymphoneIceAttack",
   publisher: "SymphoneIceAttack",
@@ -93,11 +89,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
-        <QueryProvider>
-          <LocationProvider>{children}</LocationProvider>
-        </QueryProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <QueryProvider>
+            <LocationProvider>{children}</LocationProvider>
+          </QueryProvider>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

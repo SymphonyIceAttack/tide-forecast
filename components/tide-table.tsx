@@ -27,7 +27,7 @@ export function TideTable() {
 
   if (isLoading) {
     return (
-      <Card className="mb-6">
+      <Card className="mb-6 shadow-xl border-2 border-primary/20">
         <CardHeader>
           <Skeleton className="h-6 md:h-8 w-2/3" />
         </CardHeader>
@@ -42,9 +42,9 @@ export function TideTable() {
   }
 
   return (
-    <Card className="mb-6">
+    <Card className="mb-6 shadow-xl border-2 border-primary/20 bg-card/80 backdrop-blur-sm">
       <CardHeader>
-        <CardTitle className="text-base sm:text-lg md:text-xl">
+        <CardTitle className="text-base sm:text-lg md:text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
           {currentLocation} Tide Table Today
         </CardTitle>
       </CardHeader>
@@ -58,7 +58,11 @@ export function TideTable() {
               {data?.todayTides.map((tide, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between p-2.5 md:p-3 rounded-lg bg-muted/50"
+                  className={`flex items-center justify-between p-2.5 md:p-3 rounded-lg border transition-all duration-200 hover:shadow-md ${
+                    tide.type === "high"
+                      ? "bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20 hover:border-primary/40"
+                      : "bg-gradient-to-r from-secondary/10 to-secondary/5 border-secondary/20 hover:border-secondary/40"
+                  }`}
                 >
                   <div className="flex items-center gap-2 md:gap-3">
                     {tide.type === "high" ? (
@@ -91,7 +95,11 @@ export function TideTable() {
               {data?.tomorrowTides.map((tide, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between p-2.5 md:p-3 rounded-lg bg-muted/50"
+                  className={`flex items-center justify-between p-2.5 md:p-3 rounded-lg border transition-all duration-200 hover:shadow-md ${
+                    tide.type === "high"
+                      ? "bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20 hover:border-primary/40"
+                      : "bg-gradient-to-r from-secondary/10 to-secondary/5 border-secondary/20 hover:border-secondary/40"
+                  }`}
                 >
                   <div className="flex items-center gap-2 md:gap-3">
                     {tide.type === "high" ? (

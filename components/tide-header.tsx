@@ -1,7 +1,8 @@
 "use client";
 
-import { ChevronDown, Waves } from "lucide-react";
+import { BookOpen, ChevronDown, Waves } from "lucide-react";
 import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -16,11 +17,11 @@ export function TideHeader() {
   const { currentLocation, setCurrentLocation } = useLocation();
 
   return (
-    <header className="bg-primary text-primary-foreground shadow-md">
+    <header className="bg-primary/95 backdrop-blur-md text-primary-foreground shadow-lg border-b border-primary-foreground/10">
       <div className="container mx-auto px-4 py-3 md:py-4 max-w-7xl">
         <div className="flex items-center justify-between gap-2 md:gap-4">
           <div className="flex items-center gap-2">
-            <Waves className="h-6 w-6 md:h-8 md:w-8" />
+            <Waves className="h-6 w-6 md:h-8 md:w-8 animate-pulse" />
             <span className="text-lg md:text-2xl font-bold">
               US Tide Forecast
             </span>
@@ -31,7 +32,7 @@ export function TideHeader() {
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="secondary"
-                  className="w-full justify-between bg-background/95 text-foreground hover:bg-background/90 text-sm md:text-base"
+                  className="w-full justify-between bg-background/95 text-foreground hover:bg-background/90 text-sm md:text-base shadow-md"
                 >
                   <span className="truncate">{currentLocation}</span>
                   <ChevronDown className="h-4 w-4 ml-1 md:ml-2 flex-shrink-0" />
@@ -44,7 +45,9 @@ export function TideHeader() {
                       key={location}
                       onClick={() => setCurrentLocation(location)}
                       className={
-                        currentLocation === location ? "bg-accent" : ""
+                        currentLocation === location
+                          ? "bg-accent text-accent-foreground"
+                          : ""
                       }
                     >
                       {location}
@@ -56,22 +59,17 @@ export function TideHeader() {
           </div>
 
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Link href="/blog">
               <Button
-                variant="ghost"
+                variant="secondary"
                 size="sm"
-                className="text-primary-foreground hover:bg-primary-foreground/10 font-medium"
+                className="bg-background/95 text-foreground hover:bg-background font-medium gap-1.5 md:gap-2 shadow-md"
               >
-                Blog
+                <BookOpen className="h-4 w-4" />
+                <span className="hidden sm:inline">Blog</span>
               </Button>
             </Link>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="hidden sm:flex text-primary-foreground hover:bg-primary-foreground/10"
-            >
-              English
-            </Button>
           </div>
         </div>
       </div>

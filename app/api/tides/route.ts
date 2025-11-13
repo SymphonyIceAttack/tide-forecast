@@ -166,7 +166,10 @@ export async function GET(request: NextRequest) {
   try {
     const tideData = await fetchNOAATideData(location);
     return NextResponse.json(tideData);
-  } catch (error) {
-    return NextResponse.json({ error }, { status: 500 });
+  } catch {
+    return NextResponse.json(
+      { error: "Failed to fetch tide data" },
+      { status: 500 },
+    );
   }
 }

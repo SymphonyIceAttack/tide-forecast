@@ -35,7 +35,7 @@ export function LocationInfo() {
 
   if (isLoading) {
     return (
-      <Card>
+      <Card className="shadow-xl border-2 border-primary/20">
         <CardContent className="pt-4 md:pt-6">
           <div className="flex items-start justify-between flex-wrap gap-4">
             <div className="flex-1">
@@ -53,7 +53,7 @@ export function LocationInfo() {
   }
 
   return (
-    <Card>
+    <Card className="shadow-xl border-2 border-primary/20 bg-card/80 backdrop-blur-sm">
       <CardContent className="pt-4 md:pt-6">
         <div className="flex items-start justify-between flex-wrap gap-4">
           <div>
@@ -66,11 +66,11 @@ export function LocationInfo() {
               <span className="text-pretty">{dateStr}</span>
             </p>
           </div>
-          <div className="text-right">
-            <p className="text-xs md:text-sm text-muted-foreground">
+          <div className="text-right bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg px-4 py-2 border border-primary/20">
+            <p className="text-xs md:text-sm text-muted-foreground font-medium">
               Current Tide
             </p>
-            <p className="text-2xl md:text-3xl font-bold text-primary">
+            <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               {data?.currentTide.toFixed(1)} ft
             </p>
           </div>
