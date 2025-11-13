@@ -1,5 +1,6 @@
 "use client";
 
+import { FAQSection } from "@/components/faq-section";
 import { LocationInfo } from "@/components/location-info";
 import { TideChartECharts } from "@/components/tide-chart-echarts";
 import { TideHeader } from "@/components/tide-header";
@@ -55,6 +56,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <FAQSection />
         </div>
       </main>
     </div>
