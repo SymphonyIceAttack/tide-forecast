@@ -32,7 +32,6 @@ export const metadata: Metadata = {
     "Miami tides",
     "New York tides",
   ],
-  themeColor: "#0ea5e9",
   authors: [{ name: "SymphoneIceAttack" }],
   creator: "SymphoneIceAttack",
   publisher: "SymphoneIceAttack",
