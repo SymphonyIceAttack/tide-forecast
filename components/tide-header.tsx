@@ -60,7 +60,7 @@ export function TideHeader() {
 
           <div className="flex items-center gap-2">
             <ThemeToggle />
-            <Link href="/blog">
+            <Link href="/posts">
               <Button
                 variant="secondary"
                 size="sm"
