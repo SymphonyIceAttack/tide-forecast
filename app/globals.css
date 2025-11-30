@@ -4,6 +4,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --breakpoint-xs: 475px;
+}
+
 /* Updated to vibrant ocean gradient colors with higher saturation */
 :root {
   --background: oklch(0.98 0.02 210);

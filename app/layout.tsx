@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// Temporarily disabled Google Fonts due to network connectivity issues
+// import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import type React from "react";
 import "./globals.css";
@@ -8,8 +9,8 @@ import { QueryProvider } from "@/components/query-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import { LocationProvider } from "@/lib/location-context";
 
-const geist = Geist({ subsets: ["latin"] });
-const geistMono = Geist_Mono({ subsets: ["latin"] });
+// const geist = Geist({ subsets: ["latin"] });
+// const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 // JSON-LD structured data
 const websiteSchema = {
@@ -244,9 +245,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geist.className} ${geistMono.className} font-sans antialiased`}
-      >
+      <body className="font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <QueryProvider>
             <LocationProvider>{children}</LocationProvider>
