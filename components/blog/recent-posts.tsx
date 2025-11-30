@@ -61,50 +61,46 @@ export function RecentPosts({ posts }: RecentPostsProps) {
 
   return (
     <section className="mt-12">
-      <Card className="border-2 border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-950">
-        <CardHeader>
-          <CardTitle className="text-3xl font-bold text-gray-900 dark:text-white">
-            Recent Posts
-          </CardTitle>
-          <CardDescription className="text-gray-600 dark:text-gray-400">
-            Check out our latest articles
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.map((post) => (
-              <Link
-                key={post.id}
-                href={`/posts/${post.slug}`}
-                onClick={(e) => handlePostClick(e, post.slug)}
-                className="group"
-              >
-                <Card className="h-full border-gray-200 dark:border-gray-800 hover:border-purple-500 dark:hover:border-purple-600 transition-all duration-300 hover:shadow-lg">
-                  <CardHeader>
-                    <CardTitle className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors line-clamp-2">
-                      {post.title}
-                    </CardTitle>
-                    <CardDescription className="text-sm text-gray-500 dark:text-gray-500">
-                      {new Date(post.published_at).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                      })}
-                    </CardDescription>
-                  </CardHeader>
-                  {post.description && (
-                    <CardContent>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-3">
-                        {post.description}
-                      </p>
-                    </CardContent>
-                  )}
-                </Card>
-              </Link>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+      <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 border-2 border-primary/20 shadow-xl">
+        <h3 className="text-xl md:text-2xl font-semibold mb-2 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+          Recent Posts
+        </h3>
+        <p className="text-sm text-muted-foreground mb-6">
+          Check out our latest articles about tides and coastal activities
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {posts.map((post) => (
+            <Link
+              key={post.id}
+              href={`/posts/${post.slug}`}
+              onClick={(e) => handlePostClick(e, post.slug)}
+              className="group"
+            >
+              <Card className="h-full border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg bg-card/80 backdrop-blur-sm">
+                <CardHeader>
+                  <CardTitle className="text-base md:text-lg font-semibold group-hover:text-primary transition-colors line-clamp-2">
+                    {post.title}
+                  </CardTitle>
+                  <CardDescription className="text-xs md:text-sm text-muted-foreground">
+                    {new Date(post.published_at).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </CardDescription>
+                </CardHeader>
+                {post.description && (
+                  <CardContent>
+                    <p className="text-xs md:text-sm text-muted-foreground line-clamp-3">
+                      {post.description}
+                    </p>
+                  </CardContent>
+                )}
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

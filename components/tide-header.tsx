@@ -60,6 +60,35 @@ export function TideHeader() {
 
           <div className="flex items-center gap-2">
             <ThemeToggle />
+            <div className="hidden md:flex items-center gap-2">
+              <Link href="/about">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-primary-foreground hover:bg-primary-foreground/10"
+                >
+                  About
+                </Button>
+              </Link>
+              <Link href="/faq">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-primary-foreground hover:bg-primary-foreground/10"
+                >
+                  FAQ
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-primary-foreground hover:bg-primary-foreground/10"
+                >
+                  Contact
+                </Button>
+              </Link>
+            </div>
             <Link href="/posts">
               <Button
                 variant="secondary"
