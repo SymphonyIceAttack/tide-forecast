@@ -109,10 +109,10 @@ const faqPageSchema = {
     },
     {
       "@type": "Question",
-      name: "How do I use this tide chart for fishing or boating?",
+      name: "How do I use this tide chart for commercial maritime operations and navigation?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For fishing, many anglers find the best activity occurs during tidal changes, especially the hour before and after high or low tide. For boating, check the tide times to ensure adequate water depth for navigation and safe harbor entry. Always combine tide information with local knowledge, weather forecasts, and navigation charts for the safest experience on the water.",
+        text: "For commercial maritime operations, the most critical periods occur during tidal changes, especially the hour before and after high or low tide for navigation safety and harbor operations. For professional navigation, check tide times to ensure adequate water depth for vessel transit and safe harbor entry. Always combine tide information with local knowledge, weather forecasts, and official navigation charts for the safest and most efficient maritime operations.",
       },
     },
   ],
@@ -126,13 +126,13 @@ export const metadata: Metadata = {
     template: "%s | US Tide Forecast - Professional NOAA Tide Service",
   },
   description:
-    "Professional-grade tide forecasting service providing real-time NOAA tide predictions and interactive charts for US coastal locations. Trusted by mariners, fishermen, and coastal professionals nationwide. High-accuracy tide data with ±15 minute precision.",
+    "Professional-grade tide forecasting service providing real-time NOAA tide predictions and interactive charts for US coastal locations. Trusted by mariners, commercial maritime operators, and coastal professionals nationwide. High-accuracy tide data with ±15 minute precision.",
   manifest: "/site.webmanifest",
   keywords: [
     "professional tide forecast",
     "NOAA certified tides",
     "maritime tide predictions",
-    "commercial fishing tides",
+    "commercial maritime tides",
     "harbor tide charts",
     "coastal navigation tides",
     "professional tide service",
@@ -183,7 +183,7 @@ export const metadata: Metadata = {
     title:
       "Professional US Tide Forecast | NOAA Certified Tide Predictions & Charts",
     description:
-      "Professional-grade tide forecasting service providing real-time NOAA tide predictions and interactive charts for US coastal locations. Trusted by mariners, fishermen, and coastal professionals nationwide.",
+      "Professional-grade tide forecasting service providing real-time NOAA tide predictions and interactive charts for US coastal locations. Trusted by mariners, commercial maritime operators, and coastal professionals nationwide.",
     siteName: "US Tide Forecast - Professional Tide Service",
     images: [
       {

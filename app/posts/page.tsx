@@ -16,12 +16,12 @@ import directus from "@/lib/directus";
 export const metadata: Metadata = {
   title: "Blog - US Tide Forecast",
   description:
-    "Read our latest articles and updates about tide predictions, coastal activities, and ocean insights. Expert guidance on tides, fishing, surfing, and coastal adventures.",
+    "Read our latest articles and updates about tide predictions, coastal activities, and ocean insights. Expert guidance on tides, commercial maritime operations, surfing, and coastal adventures.",
   keywords: [
     "tide blog",
     "tide articles",
     "coastal activities",
-    "tide fishing",
+    "commercial maritime tides",
     "surfing tides",
     "ocean insights",
     "coastal adventures",

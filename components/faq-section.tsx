@@ -31,9 +31,10 @@ export function FAQSection() {
         "Most coastal areas experience two high tides and two low tides each day (semi-diurnal tides) because Earth rotates through two tidal bulges created by the Moon's gravitational pull. As Earth completes one rotation (24 hours), each location passes through both bulges, experiencing two high tides and two low tides approximately 12 hours apart.",
     },
     {
-      question: "How do I use this tide chart for fishing or boating?",
+      question:
+        "How do I use this tide chart for commercial maritime operations and navigation?",
       answer:
-        "For fishing, many anglers find the best activity occurs during tidal changes, especially the hour before and after high or low tide. For boating, check the tide times to ensure adequate water depth for navigation and safe harbor entry. Always combine tide information with local knowledge, weather forecasts, and navigation charts for the safest experience on the water.",
+        "For commercial maritime operations, the most critical periods occur during tidal changes, especially the hour before and after high or low tide for navigation safety and harbor operations. For professional navigation, check tide times to ensure adequate water depth for vessel transit and safe harbor entry. Always combine tide information with local knowledge, weather forecasts, and official navigation charts for the safest and most efficient maritime operations.",
     },
     {
       question: "Can weather affect tide predictions?",

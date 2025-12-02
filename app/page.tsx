@@ -39,8 +39,8 @@ export default function Home() {
               </h1>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/90 max-w-2xl leading-relaxed">
                 Real-time NOAA tide predictions and professional-grade charts
-                for major coastal locations. Trusted by mariners, fishermen, and
-                coastal professionals nationwide.
+                for major coastal locations. Trusted by mariners, commercial
+                maritime operators, and coastal professionals nationwide.
               </p>
             </div>
           </div>
