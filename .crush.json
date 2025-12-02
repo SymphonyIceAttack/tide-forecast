@@ -26,13 +26,17 @@
       "ls",
       "Read",
       "edit",
+      "multiedit",
+      "write",
       "tree",
-      "mcp_context7_get-library-doc",
-      "mcp_chrome-devtools*",
-      "mcp_context7*",
-      "mcp_MiniMax-Mcp*",
-      "mcp_MiniMax-Code*",
-      "mcp_MiniMax-Mcp_text_to_image"
+      "mcp_context7_resolve_library_id",
+      "mcp_context7_get_library_docs",
+      "mcp_MiniMax-Mcp_text_to_image",
+      "mcp_MiniMax-Mcp_music_generation",
+      "mcp_MiniMax-Mcp_generate_video",
+      "mcp_MiniMax-Mcp_text_to_audio",
+      "mcp_MiniMax-Code_understand_imag",
+      "mcp_MiniMax-Code_web_search"
     ]
   },
   "providers": {
@@ -60,10 +64,10 @@
     }
   },
   "mcp": {
-    "chrome-devtools": {
+    "playwright": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "chrome-devtools-mcp@latest"]
+      "args": ["@playwright/mcp@latest"]
     },
     "context7": {
       "type": "stdio",
@@ -94,6 +98,16 @@
         "MINIMAX_API_HOST": "https://api.minimaxi.com",
         "MINIMAX_API_RESOURCE_MODE": "url"
       }
+    },
+    "serena": {
+      "command": "uvx",
+      "type": "stdio",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server"
+      ]
     }
   },
   "lsp": {
