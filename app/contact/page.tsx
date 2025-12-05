@@ -140,6 +140,51 @@ export default function ContactPage() {
 
           <section className="mb-8">
             <h2 className="text-xl md:text-2xl font-semibold mb-4 text-primary">
+              Open Source & Contributions
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              US Tide Forecast is an open source project! We welcome
+              contributions from developers, marine scientists, and maritime
+              professionals. The project is hosted on GitHub where you can:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 border-2 border-primary/20">
+                <h3 className="font-semibold mb-3 text-lg text-primary">
+                  For Developers
+                </h3>
+                <ul className="text-muted-foreground space-y-2 mb-4">
+                  <li>• Report bugs and issues</li>
+                  <li>• Request new features</li>
+                  <li>• Submit pull requests</li>
+                  <li>• Review code changes</li>
+                  <li>• Deploy your own instance</li>
+                </ul>
+                <a
+                  href="https://github.com/SymphonyIceAttack/tide-forecast"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                >
+                  GitHub Repository
+                </a>
+              </div>
+              <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 border-2 border-primary/20">
+                <h3 className="font-semibold mb-3 text-lg text-primary">
+                  For Maritime Professionals
+                </h3>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>• Share feedback and requirements</li>
+                  <li>• Suggest new features for professionals</li>
+                  <li>• Report accuracy issues</li>
+                  <li>• Propose additional locations</li>
+                  <li>• Contribute domain expertise</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-primary">
               Report Issues
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">

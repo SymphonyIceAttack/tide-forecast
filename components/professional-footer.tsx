@@ -140,6 +140,18 @@ export function ProfessionalFooter() {
                   Contact Professional Team
                 </Link>
               </div>
+              <div>
+                <p className="font-medium text-foreground mb-1">Open Source</p>
+                <a
+                  href="https://github.com/SymphonyIceAttack/tide-forecast"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
+                >
+                  View Source Code
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -121,12 +121,11 @@ const faqPageSchema = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tide-forecast.art/"),
   title: {
-    default:
-      "Professional US Tide Forecast | NOAA Certified Tide Predictions & Charts",
-    template: "%s | US Tide Forecast - Professional NOAA Tide Service",
+    default: "US Tide Forecast | NOAA Predictions & Charts",
+    template: "%s | US Tide Forecast - Professional Tide Service",
   },
   description:
-    "Professional-grade tide forecasting service providing real-time NOAA tide predictions and interactive charts for US coastal locations. Trusted by mariners, commercial maritime operators, and coastal professionals nationwide. High-accuracy tide data with ±15 minute precision.",
+    "Professional NOAA tide predictions and charts for US coastal locations. Real-time data trusted by mariners and coastal professionals nationwide.",
   manifest: "/site.webmanifest",
   keywords: [
     "professional tide forecast",
@@ -180,10 +179,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    title:
-      "Professional US Tide Forecast | NOAA Certified Tide Predictions & Charts",
+    title: "US Tide Forecast | NOAA Tide Predictions & Charts",
     description:
-      "Professional-grade tide forecasting service providing real-time NOAA tide predictions and interactive charts for US coastal locations. Trusted by mariners, commercial maritime operators, and coastal professionals nationwide.",
+      "Professional NOAA tide predictions and interactive charts for US coastal locations. Real-time data trusted by mariners nationwide.",
     siteName: "US Tide Forecast - Professional Tide Service",
     images: [
       {
@@ -206,10 +204,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@tideforecast",
     creator: "@tideforecast",
-    title:
-      "Professional US Tide Forecast | NOAA Certified Tide Predictions & Charts",
+    title: "US Tide Forecast | NOAA Tide Predictions & Charts",
     description:
-      "Professional-grade tide forecasting service providing real-time NOAA tide predictions and interactive charts for US coastal locations.",
+      "Professional NOAA tide predictions and interactive charts for US coastal locations. Real-time data trusted by mariners nationwide.",
     images: ["/og-image.jpg", "/og-image-wide.jpg"],
   },
   robots: {

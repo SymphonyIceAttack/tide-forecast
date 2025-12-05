@@ -1,6 +1,6 @@
 "use client";
 
-import { Award, Clock, MapPin, Shield, TrendingUp, Users } from "lucide-react";
+import { Award, Clock, MapPin, Shield } from "lucide-react";
 import Image from "next/image";
 import { LocationInfo } from "@/components/location-info";
 import { TideChartECharts } from "@/components/tide-chart-echarts";
@@ -128,58 +128,6 @@ export default function Home() {
               <p className="text-white/80 text-xs">
                 Professional maritime data
               </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Professional Statistics Section */}
-        <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-xl p-4 sm:p-6 mb-6 sm:mb-8 border border-primary/20">
-          <div className="text-center mb-4 sm:mb-6">
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2">
-              Trusted by Professionals Worldwide
-            </h2>
-            <p className="text-sm sm:text-base text-muted-foreground">
-              Join thousands of maritime professionals who rely on our accurate
-              tide forecasts
-            </p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-2">
-                <Users className="h-6 w-6 sm:h-8 sm:w-8 text-primary mr-2" />
-                <TrendingUp className="h-6 w-6 sm:h-8 sm:w-8 text-accent" />
-              </div>
-              <p className="text-xl sm:text-2xl font-bold text-foreground">
-                50K+
-              </p>
-              <p className="text-xs sm:text-sm text-muted-foreground">
-                Monthly Users
-              </p>
-            </div>
-            <div className="text-center">
-              <MapPin className="h-6 w-6 sm:h-8 sm:w-8 text-primary mx-auto mb-2" />
-              <p className="text-xl sm:text-2xl font-bold text-foreground">
-                100+
-              </p>
-              <p className="text-xs sm:text-sm text-muted-foreground">
-                Coastal Locations
-              </p>
-            </div>
-            <div className="text-center">
-              <Clock className="h-6 w-6 sm:h-8 sm:w-8 text-accent mx-auto mb-2" />
-              <p className="text-xl sm:text-2xl font-bold text-foreground">
-                24/7
-              </p>
-              <p className="text-xs sm:text-sm text-muted-foreground">
-                Real-Time Data
-              </p>
-            </div>
-            <div className="text-center">
-              <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-primary mx-auto mb-2" />
-              <p className="text-xl sm:text-2xl font-bold text-foreground">
-                99.9%
-              </p>
-              <p className="text-xs sm:text-sm text-muted-foreground">Uptime</p>
             </div>
           </div>
         </div>

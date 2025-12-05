@@ -196,6 +196,35 @@ export default function AboutPage() {
 
           <section className="mb-8">
             <h2 className="text-xl md:text-2xl font-semibold mb-4 text-primary">
+              Open Source & Transparency
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              US Tide Forecast is an open source project committed to
+              transparency and community collaboration. Our source code is
+              available on GitHub, allowing maritime professionals, researchers,
+              and developers to review, contribute, and build upon our work.
+            </p>
+            <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 border-2 border-primary/20 mb-6">
+              <h3 className="font-semibold mb-3 text-lg text-primary">
+                GitHub Repository
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Explore our codebase, contribute improvements, or deploy your
+                own instance of the tide forecasting service:
+              </p>
+              <a
+                href="https://github.com/SymphonyIceAttack/tide-forecast"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-xl md:text-2xl font-semibold mb-4 text-primary">
               Professional Team & Expertise
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
