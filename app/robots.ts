@@ -12,14 +12,11 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           "/api/",
           "/admin/",
-          "/_next/",
           "/private/",
           "/draft/",
           "/search",
           "/login",
           "/register",
-          "*.json$",
-          "*.xml$",
         ],
       },
       {
